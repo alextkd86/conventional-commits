@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/alextkd86/conventional-commits#readme",
   "devDependencies": {
+    "eslint": "^8.36.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.0"
   }
