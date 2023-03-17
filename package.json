@@ -1,0 +1,27 @@
+{
+  "name": "conventional-commits",
+  "version": "1.0.0",
+  "description": "Be a professional executing commits",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alextkd86/conventional-commits.git"
+  },
+  "keywords": [
+    "conventional-commits"
+  ],
+  "author": "Alejandro Pascual <alextkd@gmail.com> (https://github.com/alextkd86)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alextkd86/conventional-commits/issues"
+  },
+  "homepage": "https://github.com/alextkd86/conventional-commits#readme",
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0"
+  }
+}
