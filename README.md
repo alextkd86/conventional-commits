@@ -20,8 +20,10 @@ Configuramos todo lo necesario para sacarle provecho a estas dos librerías:
     * 2.1. Si npm < 9   -->   `npm set-script prepare 'husky install'`.
     * 2.2. Si npm >= 9  -->   `npm pkg set scripts.prepare='husky install'`
         * Este comando lo que hace es añadir en el `package.json` un nuevo script que quedaría así: `"prepare": "husky install"`
-4. Ejecutamos rel script que hemos cerado anteriormente: `npm run prepare`
+4. Ejecutamos el script que hemos cerado anteriormente: `npm run prepare`
     * Este comando lo que hace es instalar los GitHooks dentro de la carpeta .husky que la crea a la misma vez.
 5. Vamos a añadir un GitHook, concretamente el de precommit, para que antes de hacer un commit se ejecute lo que nosotros queramos, en nuestro caso, haremos que se ejecute `lint-staged`:
     * --> `npx husky add .husky/pre-commit "npx lint-staged"`
     * Una vez lo ejecutemos podemos ver dentro de la carpeta .husky, el GitHook de pre-commit.
+6. Vamos a añadir el GitHook de pre-push, para que antes de hacer push se ejecuten los tests:
+    * --> `npx husky add .husky/pre-push "npm run test"`
