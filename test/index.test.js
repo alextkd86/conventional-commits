@@ -10,10 +10,10 @@ describe('basic arithmetic test form index.js', () => {
     
     it('returns the add of a + b', () => {
         const result = add(a, b);
-        assert.equal(result, expectedResultAdd);
+        assert.equal(result, expectedResultAdd, `The add is not working properly: ${a}+${b} is not equal to ${expectedResultAdd}`);
     });
     it('returns the subtract of a + b', () => {
         const result = subtract(a, b);
-        assert.equal(result, expectedResultSubtract);
+        assert.equal(result, expectedResultSubtract, `The subtract is not working properly: ${a}-${b} is not equal to ${expectedResultSubtract}`);
     });
 });
