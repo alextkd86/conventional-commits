@@ -1,6 +1,6 @@
 {
   "name": "conventional-commits",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Be a professional executing commits",
   "main": "index.js",
   "scripts": {
