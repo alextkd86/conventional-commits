@@ -31,4 +31,18 @@ Configuramos todo lo necesario para sacarle provecho a estas dos librerías:
 
 
 - Install en VSCode
-  - Download the extension: `Conventional Commits` --> To use, `cmd + shift + p` and search `Conventional Commits``º
+  - Download the extension: `Conventional Commits` --> To use, `cmd + shift + p` and search `Conventional Commits`
+
+- Install 2 new dev dependencies:
+    - `@commitlint/cli`
+    - `@commitlint/config-conventional`
+    - Tal que así --> `npm install --D @commitlint/cli @commitlint/config-conventional`
+    - Now, we have to create a new file named `commitlint.config.js` in the root directory
+    - We must execute --> `npx husky add .husky/commit-msg "npx --no -- commitlint --edit ${1}"` (only once)
+
+- Install `conventional-changelog` para ver los cambios que vamos haciendo
+    - --> `npm install -g conventional-changelog-cli` (only once)
+        - We need to do only once --> `conventional-changelog -i CHANGELOG.md -s -r 0`
+
+- To increment the version number:
+    - `npm version major|minor|patch`

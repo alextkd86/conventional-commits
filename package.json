@@ -1,11 +1,11 @@
 {
   "name": "conventional-commits",
-  "version": "1.0.0", 
-  "type": "module", 
+  "version": "1.0.0",
   "description": "Be a professional executing commits",
   "main": "index.js",
   "scripts": {
     "test": "node --test test/*",
+    "tsc": "tsc",
     "prepare": "husky install"
   },
   "repository": {
@@ -22,8 +22,16 @@
   },
   "homepage": "https://github.com/alextkd86/conventional-commits#readme",
   "devDependencies": {
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
     "eslint": "^8.36.0",
     "husky": "^8.0.3",
-    "lint-staged": "^13.2.0"
+    "lint-staged": "^13.2.0",
+    "ts-node-dev": "^2.0.0",
+    "ts-standard": "^12.0.2",
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "conventional-changelog-cli": "^2.2.2"
   }
 }
