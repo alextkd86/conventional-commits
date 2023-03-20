@@ -4,7 +4,7 @@
   "description": "Be a professional executing commits",
   "main": "index.js",
   "scripts": {
-    "test": "ts-node --test test/*",
+    "test": "tsc --noEmit && node --loader tsx --test test/*",
     "tsc": "tsc",
     "prepare": "husky install"
   },
@@ -29,9 +29,11 @@
     "lint-staged": "^13.2.0",
     "ts-node-dev": "^2.0.0",
     "ts-standard": "^12.0.2",
+    "tsx": "^3.12.5",
     "typescript": "^5.0.2"
   },
   "dependencies": {
+    "@types/node": "^18.15.3",
     "conventional-changelog-cli": "^2.2.2"
   }
 }

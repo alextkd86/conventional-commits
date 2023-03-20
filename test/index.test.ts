@@ -1,6 +1,6 @@
 import { describe, it } from 'node:test';
 import assert from 'node:assert';
-import { add, subtract } from '../index.js';
+import { add, subtract } from '../src/index.js';
 
 describe('basic arithmetic test form index.js', () => {
     const a = 5;

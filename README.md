@@ -46,3 +46,7 @@ Configuramos todo lo necesario para sacarle provecho a estas dos librerías:
 
 - To increment the version number:
     - `npm version major|minor|patch`
+
+Neccessary dependencies to work in TS:
+  - --> `npm i @types/node`
+  - --> `npm install -D ts-node-dev ts-standard tsx typescript`
