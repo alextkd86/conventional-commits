@@ -6,7 +6,7 @@
  */
 const add = (a, b) => {
     return a + b;
-}
+};
 
 /**
  * Subtract a - b
