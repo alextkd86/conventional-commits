@@ -28,3 +28,7 @@ Configuramos todo lo necesario para sacarle provecho a estas dos librerías:
 6. Vamos a añadir el GitHook de pre-push, para que antes de hacer push se ejecuten los tests:
     * --> `npx husky add .husky/pre-push "npm run test"`
 7. Para asegurarnos que no nos falla eslint en los archivos donde no queremos que se pase, nos creamos el archivo `.eslintignore` e incluimos las rutas y archivos donde no queremos que se pase `eslint`
+
+
+- Install en VSCode
+  - Download the extension: `Conventional Commits` --> To use, `cmd + shift + p` and search `Conventional Commits``º
