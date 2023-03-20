@@ -4,7 +4,7 @@
   "description": "Be a professional executing commits",
   "main": "index.js",
   "scripts": {
-    "test": "node --test test/*",
+    "test": "ts-node --test test/*",
     "tsc": "tsc",
     "prepare": "husky install"
   },
