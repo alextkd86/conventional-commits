@@ -6,7 +6,8 @@
   "scripts": {
     "test": "tsc --noEmit && node --loader tsx --test test/*",
     "tsc": "tsc",
-    "prepare": "husky install"
+    "version": "conventional-changelog -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
+    "prepare:husky": "husky install"
   },
   "repository": {
     "type": "git",
